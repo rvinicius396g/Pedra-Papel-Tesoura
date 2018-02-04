@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         int n_aleatorio = new Random().nextInt(3);
 
         String[] n_escolhas = {"pedra","papel","tesoura"};
-        String n_AleatEscolha = n_escolhas[0];
+        String n_AleatEscolha = n_escolhas[n_aleatorio];
         System.out.println(n_AleatEscolha);
 
 
