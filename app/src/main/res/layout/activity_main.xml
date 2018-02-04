@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viniciius.free.pedrapapeltesoura.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/btnTitulo"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="titulo do App"
+        android:text="Pedra papel Tesoura"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_resultado"
+        android:layout_width="146dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/vtn_CampoValor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTitulo"
+        app:srcCompat="@drawable/ic_videogame_asset_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btn_Pedra"
+        android:layout_width="104dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="87dp"
+        android:onClick="choise_pedra"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Papel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_resultado"
+        app:srcCompat="@drawable/pedra_icon" />
+
+    <ImageView
+        android:id="@+id/btn_Tesoura"
+        android:layout_width="104dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="87dp"
+        android:onClick="choise_tesoura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Papel"
+        app:layout_constraintTop_toBottomOf="@+id/img_resultado"
+        app:srcCompat="@drawable/tesoura_icon" />
+
+    <ImageView
+        android:id="@+id/btn_Papel"
+        android:layout_width="104dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="87dp"
+        android:onClick="choise_papel"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Tesoura"
+        app:layout_constraintStart_toEndOf="@+id/btn_Pedra"
+        app:layout_constraintTop_toBottomOf="@+id/img_resultado"
+        app:srcCompat="@drawable/papel_icon" />
+
+    <ImageView
+        android:id="@+id/vtn_CampoValor"
+        android:layout_width="123dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_resultado"
+        app:layout_constraintTop_toBottomOf="@+id/btnTitulo"
+        app:layout_constraintVertical_bias="0.622"
+        app:srcCompat="@drawable/ic_panorama_wide_angle_black_24dp" />
+
+    <TextView
+        android:id="@+id/txtTexto_contador"
+        android:layout_width="34dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vtn_CampoValor"
+        app:layout_constraintEnd_toEndOf="@+id/vtn_CampoValor"
+        app:layout_constraintStart_toEndOf="@+id/img_resultado"
+        app:layout_constraintTop_toTopOf="@+id/vtn_CampoValor" />
+
+</android.support.constraint.ConstraintLayout>
